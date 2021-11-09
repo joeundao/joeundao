@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         />
         <p className={styles.title}>Joeun DAO (좋은다오)</p>
         <small className={styles.description}>
-          Decentrailzed Governance Community for Good.
+          Decentralized Governance Community for Good.
         </small>
       </main>
     </div>
