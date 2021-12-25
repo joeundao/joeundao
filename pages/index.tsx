@@ -22,8 +22,8 @@ const Home: NextPage = () => {
           height={200}
           alt="Joeun DAO Logo"
         />
-        <p className={styles.title}>Joeun DAO (좋은다오)</p>
-        <small className={styles.description}>
+        <span className="text-2xl">Joeun DAO (좋은다오)</span>
+        <small className="text-gray-500">
           Decentralized Community for Good.
         </small>
       </main>
