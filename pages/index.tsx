@@ -9,10 +9,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Joeun DAO</title>
-        <meta
-          name="description"
-          content="Decentrailzed Community for Good."
-        />
+        <meta name="description" content="Decentrailzed Community for Good." />
         <link rel="icon" href="/joeundao-logo.png" />
       </Head>
 
