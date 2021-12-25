@@ -3,4 +3,4 @@
   <h1 align='center'>Joeun DAO (좋은다오)</h1>
 </p>
 
-<p align='center'>Decentralized Governance Community for Good.</p>
+<p align='center'>Decentralized Community for Good.</p>
