@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <title>Joeun DAO</title>
         <meta
           name="description"
-          content="Decentrailzed Governance Community for Good."
+          content="Decentrailzed Community for Good."
         />
         <link rel="icon" href="/joeundao-logo.png" />
       </Head>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         />
         <p className={styles.title}>Joeun DAO (좋은다오)</p>
         <small className={styles.description}>
-          Decentralized Governance Community for Good.
+          Decentralized Community for Good.
         </small>
       </main>
     </div>
