@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import JoeunDAOLogo from "../public/joeundao-logo.png";
+// import Web3 from "web3";
+// import Web3Modal from "web3modal";
 
 const Home: NextPage = () => {
   return (
@@ -20,8 +22,8 @@ const Home: NextPage = () => {
           height={200}
           alt="Joeun DAO Logo"
         />
-        <p className={styles.title}>Joeun DAO (좋은다오)</p>
-        <small className={styles.description}>
+        <span className="text-2xl">Joeun DAO (좋은다오)</span>
+        <small className="text-gray-500">
           Decentralized Community for Good.
         </small>
       </main>

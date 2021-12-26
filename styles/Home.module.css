@@ -17,14 +17,6 @@
   align-items: center;
 }
 
-.title {
-  font-size: 2em;
-}
-
-.description {
-  color: gray;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
