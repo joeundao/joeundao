@@ -6,8 +6,6 @@ import JoeunDAOLogo from "../public/joeundao-logo.png";
 // import Web3 from "web3";
 // import Web3Modal from "web3modal";
 
-import { BeakerIcon } from "@heroicons/react/solid";
-
 const Home: NextPage = () => {
   return (
     <div>
