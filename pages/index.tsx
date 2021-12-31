@@ -60,6 +60,10 @@ const Home: NextPage = () => {
               Use open source and non-custodial liquidity pool for earning
               interest.
             </p>
+            <p className="leading-relaxed text-gray-500">
+              NFT certificate for every gift.
+            </p>
+            <p className="leading-relaxed text-gray-500">Transparency</p>
 
             <div className="mt-20">
               <Link href="https://twitter.com/joeundao">
