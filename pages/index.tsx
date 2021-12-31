@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="md:container md:mx-auto px-10">
+        <div className="md:container md:mx-auto px-10 mb-20">
           <div className="mt-28">
             <Image
               src={JoeunDAOLogo}
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
               Decentralized Community for Good.
             </small>
           </div>
-          <p className="text-5xl py-10 leading-normal text-gray-400 w-3/4">
+          <p className="sm:text-5xl text-2xl py-10 sm:leading-relaxed leading-relaxed text-gray-400 w-3/4">
             Joeun DAO is a community of good humans trying to do random acts of
             kindness worldwide. We believe kind acts have superpowers.
           </p>
