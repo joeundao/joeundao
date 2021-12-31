@@ -63,7 +63,9 @@ const Home: NextPage = () => {
             <p className="leading-relaxed text-gray-500">
               NFT certificate for every gift.
             </p>
-            <p className="leading-relaxed text-gray-500">Transparency</p>
+            <p className="leading-relaxed text-gray-500">
+              Transparency on blockchain.
+            </p>
 
             <div className="mt-20">
               <Link href="https://twitter.com/joeundao">
