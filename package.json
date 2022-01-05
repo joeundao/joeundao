@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.5",
+    "@openzeppelin/contracts": "^4.4.1",
     "next": "^12.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.45.1",
+    "wagmi": "^0.0.17",
     "web3modal": "^1.9.4"
   },
   "devDependencies": {
@@ -40,7 +42,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-promise": "^5.1.1",
     "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.5.1",
+    "ethers": "^5.5.2",
     "hardhat": "^2.6.7",
     "hardhat-gas-reporter": "^1.0.4",
     "postcss": "^8.4.5",

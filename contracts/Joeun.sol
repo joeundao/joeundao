@@ -12,7 +12,7 @@ contract HFNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
 
   Counters.Counter private _tokenIdCounter;
 
-  constructor() ERC721("JOEUND NFT", "JOEUN") {}
+  constructor() ERC721("JOEUN", "JOEUN") {}
 
   function mintNFT(string memory nftURI) public returns (uint256) {
     _tokenIdCounter.increment();
