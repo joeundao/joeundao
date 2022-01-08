@@ -3,8 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import JoeunDAOLogo from "../public/joeundao-logo.png";
-// import Web3 from "web3";
-// import Web3Modal from "web3modal";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="md:container md:mx-auto px-10 mb-20">
+        <div className="px-10 mb-20 md:container md:mx-auto">
           <div className="mt-28">
             <Image
               src={JoeunDAOLogo}
@@ -36,11 +34,16 @@ const Home: NextPage = () => {
               Decentralized Community for Good.
             </small>
           </div>
-          <p className="sm:text-5xl text-2xl py-10 sm:leading-relaxed leading-relaxed text-gray-400 w-3/4">
+          <p className="w-3/4 py-10 text-2xl leading-relaxed text-gray-400 sm:text-5xl sm:leading-relaxed">
             Joeun DAO is a community of good humans trying to do random acts of
             kindness worldwide. We believe kind acts have superpowers.
           </p>
-          <div className="mt-20 w-2/3">
+          <Link href="https://community.joeundao.com">
+            <button className="px-12 py-5 text-white transition duration-300 ease-in-out delay-150 rounded-lg shadow-md bg-rose-500 hover:-translate-y-1 hover:scale-105 hover:bg-rose-600">
+              Join Joeun DAO
+            </button>
+          </Link>
+          <div className="w-2/3 mt-20">
             <span className="text-3xl">How DAO is different?</span>
             <p className="mt-10 leading-relaxed text-gray-500">Simple.</p>
             <p className="leading-relaxed text-gray-500">No middle man.</p>
@@ -48,7 +51,7 @@ const Home: NextPage = () => {
               Donations go directly to recipient.
             </p>
           </div>
-          <div className="mt-20 w-2/3">
+          <div className="w-2/3 mt-20">
             <span className="text-3xl">Why Joeun DAO?</span>
             <p className="mt-10 leading-relaxed text-gray-500">
               Decide who to give together.
@@ -69,23 +72,7 @@ const Home: NextPage = () => {
 
             <div className="mt-20">
               <Link href="https://twitter.com/joeundao">
-                <a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 float-left"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                    />
-                  </svg>
-                  JoeunDAO
-                </a>
+                <a>@JoeunDAO</a>
               </Link>
             </div>
           </div>
