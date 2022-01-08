@@ -47,30 +47,34 @@ const Home: NextPage = () => {
           </div>
           <div className="w-2/3 mt-20">
             <span className="text-3xl">How DAO is different?</span>
-            <p className="mt-10 leading-relaxed text-gray-500">Simple.</p>
-            <p className="leading-relaxed text-gray-500">No middle man.</p>
-            <p className="leading-relaxed text-gray-500">
-              Donations go directly to recipient.
-            </p>
+            <ul className="ml-10 list-disc">
+              <li className="mt-10 leading-relaxed text-gray-500">Simple.</li>
+              <li className="leading-relaxed text-gray-500">No middle man.</li>
+              <li className="leading-relaxed text-gray-500">
+                Donations go directly to recipient.
+              </li>
+            </ul>
           </div>
           <div className="w-2/3 mt-20">
             <span className="text-3xl">Why Joeun DAO?</span>
-            <p className="mt-10 leading-relaxed text-gray-500">
-              Decide who to give together.
-            </p>
-            <p className="leading-relaxed text-gray-500">
-              Two is better than one.
-            </p>
-            <p className="leading-relaxed text-gray-500">
-              Use open source and non-custodial liquidity pool for earning
-              interest.
-            </p>
-            <p className="leading-relaxed text-gray-500">
-              NFT certificate for every gift.
-            </p>
-            <p className="leading-relaxed text-gray-500">
-              Transparency on blockchain.
-            </p>
+            <ul className="ml-10 list-disc">
+              <li className="mt-10 leading-relaxed text-gray-500">
+                Decide who to give together.
+              </li>
+              <li className="leading-relaxed text-gray-500">
+                Two is better than one.
+              </li>
+              <li className="leading-relaxed text-gray-500">
+                Use open source and non-custodial liquidity pool for earning
+                interest.
+              </li>
+              <li className="leading-relaxed text-gray-500">
+                NFT certificate for every gift.
+              </li>
+              <li className="leading-relaxed text-gray-500">
+                Transparency on blockchain.
+              </li>
+            </ul>
 
             <div className="mt-20">
               <Link href="https://twitter.com/joeundao">
