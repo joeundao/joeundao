@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <main>
         <div className="px-10 mb-20 md:container md:mx-auto">
-          <div className="mt-28">
+          <div className="mt-10">
             <Image
               src={JoeunDAOLogo}
               width={100}
