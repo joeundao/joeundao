@@ -48,10 +48,10 @@ const Home: NextPage = () => {
           <div className="w-2/3 mt-20">
             <span className="text-3xl">How DAO is different?</span>
             <ul className="ml-10 list-disc">
-              <li className="mt-10 leading-relaxed text-gray-500">Simple.</li>
-              <li className="leading-relaxed text-gray-500">No middle man.</li>
+              <li className="mt-10 leading-relaxed text-gray-500">Simple</li>
+              <li className="leading-relaxed text-gray-500">No middle man</li>
               <li className="leading-relaxed text-gray-500">
-                Donations go directly to recipient.
+                Donations go directly to recipient
               </li>
             </ul>
           </div>
@@ -59,20 +59,20 @@ const Home: NextPage = () => {
             <span className="text-3xl">Why Joeun DAO?</span>
             <ul className="ml-10 list-disc">
               <li className="mt-10 leading-relaxed text-gray-500">
-                Decide who to give together.
+                Decide who to give together
               </li>
               <li className="leading-relaxed text-gray-500">
-                Two is better than one.
+                Two is better than one
               </li>
               <li className="leading-relaxed text-gray-500">
                 Use open source and non-custodial liquidity pool for earning
-                interest.
+                interest
               </li>
               <li className="leading-relaxed text-gray-500">
-                NFT certificate for every gift.
+                NFT certificate for every gift
               </li>
               <li className="leading-relaxed text-gray-500">
-                Transparency on blockchain.
+                Transparency on blockchain
               </li>
             </ul>
 
