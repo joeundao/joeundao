@@ -34,15 +34,17 @@ const Home: NextPage = () => {
               Decentralized Community for Good.
             </small>
           </div>
-          <p className="w-3/4 py-10 text-2xl leading-relaxed text-gray-400 sm:text-5xl sm:leading-relaxed">
-            Joeun DAO is a community of good humans trying to do random acts of
-            kindness worldwide. We believe kind acts have superpowers.
-          </p>
-          <Link href="https://community.joeundao.com">
-            <button className="px-12 py-5 text-white transition duration-300 ease-in-out delay-150 rounded-lg shadow-md bg-rose-500 hover:-translate-y-1 hover:scale-105 hover:bg-rose-600">
-              Join Joeun DAO
-            </button>
-          </Link>
+          <div className="p-10 mt-10 bg-gray-100 rounded-lg lg:p-20 p-lg-20">
+            <p className="w-3/4 mb-10 text-2xl leading-relaxed text-gray-400 sm:text-4xl sm:leading-relaxed">
+              Joeun DAO is a community of good humans trying to do random acts
+              of kindness worldwide. We believe kind acts have superpowers.
+            </p>
+            <Link href="https://snapshot.org/#/joeundao.eth">
+              <button className="px-12 py-5 text-white transition duration-300 ease-in-out delay-150 rounded-lg shadow-md bg-rose-500 hover:-translate-y-1 hover:bg-rose-600">
+                Join Joeun DAO Snapshot
+              </button>
+            </Link>
+          </div>
           <div className="w-2/3 mt-20">
             <span className="text-3xl">How DAO is different?</span>
             <p className="mt-10 leading-relaxed text-gray-500">Simple.</p>
