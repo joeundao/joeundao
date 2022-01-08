@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  experimental: {
+  swcMinify: false,
+  rimental: {
     urlImports: ["https://cdn.skypack.dev"],
   },
   images: {
