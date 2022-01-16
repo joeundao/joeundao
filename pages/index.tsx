@@ -1,10 +1,26 @@
+// NEXT
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+
+// JOEUN
 import JoeunDAOLogo from "../public/joeundao-logo.png";
 
+// REACT
+import { useState, useEffect } from "react";
+import { useConnect } from "wagmi";
+
+export const useIsMounted = () => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted;
+};
+
 const Home: NextPage = () => {
+  const isMounted = useIsMounted();
+  const [{ data, error }, connect] = useConnect();
+
   return (
     <div>
       <Head>
@@ -16,7 +32,6 @@ const Home: NextPage = () => {
           rel="stylesheet"
         ></link>
       </Head>
-
       <main>
         <div className="px-10 mb-20 md:container md:mx-auto">
           <div className="mt-10">
@@ -28,7 +43,9 @@ const Home: NextPage = () => {
               alt="Joeun DAO Logo"
             />
           </div>
-          <div className="text-2xl">Joeun DAO (좋은다오)</div>
+          <div className="text-2xl">
+            Joeun DAO (좋은다오) <span className="text-xs align-top">Beta</span>
+          </div>
           <div>
             <small className="text-gray-500">
               Decentralized Community for Good.
@@ -39,8 +56,26 @@ const Home: NextPage = () => {
               Joeun DAO is a community of good humans trying to do random acts
               of kindness worldwide. We believe kind acts have superpowers.
             </p>
+            <div className="mb-10">
+              {data.connectors.map((x) => (
+                <button
+                  className="w-full px-10 py-4 mb-5 mr-5 font-extrabold transition duration-300 ease-in-out delay-150 rounded-lg shadow text-cyan-900 bg-cyan-50 hover:bg-cyan-100 active:bg-cyan-200 md:w-fit"
+                  disabled={isMounted ? !x.ready : false}
+                  key={x.id}
+                  onClick={() => connect(x)}
+                >
+                  {isMounted ? x.name : x.id === "injected" ? x.id : x.name}
+                  {isMounted ? !x.ready && " (unsupported)" : ""}
+                </button>
+              ))}
+              {error && (
+                <div className="mt-5 text-rose-800">
+                  {error?.message ?? "Failed to connect"}
+                </div>
+              )}
+            </div>
             <Link href="https://snapshot.org/#/joeundao.eth">
-              <button className="px-12 py-5 text-white transition duration-300 ease-in-out delay-150 rounded-lg shadow-md bg-rose-500 hover:-translate-y-1 hover:bg-rose-600">
+              <button className="px-12 py-5 font-extrabold transition duration-300 ease-in-out delay-150 rounded-lg shadow text-rose-800 bg-rose-50 hover:bg-rose-100 active:bg-rose-200">
                 Join Joeun DAO Snapshot
               </button>
             </Link>
