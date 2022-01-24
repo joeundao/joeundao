@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 // JOEUN
 import JoeunDAOLogo from "../public/joeundao-logo.png";
@@ -10,6 +11,10 @@ import JoeunDAOLogo from "../public/joeundao-logo.png";
 // REACT
 import { useState, useEffect } from "react";
 import { useConnect } from "wagmi";
+
+const PolygonWidget = dynamic(() => import("../components/PolygonWidget"), {
+  ssr: false,
+});
 
 export const useIsMounted = () => {
   const [mounted, setMounted] = useState(false);
@@ -56,7 +61,9 @@ const Home: NextPage = () => {
               Joeun DAO is a community of good humans trying to do random acts
               of kindness worldwide. We believe kind acts have superpowers.
             </p>
+
             <div className="mb-10">
+              <PolygonWidget />
               {data.connectors.map((x) => (
                 <button
                   className="w-full px-10 py-4 mb-5 mr-5 font-extrabold transition duration-300 ease-in-out delay-150 rounded-lg shadow text-cyan-900 bg-cyan-50 hover:bg-cyan-100 active:bg-cyan-200 md:w-fit"
