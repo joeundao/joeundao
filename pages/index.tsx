@@ -2,30 +2,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import dynamic from "next/dynamic";
 
 // JOEUN
 import JoeunDAOLogo from "../public/joeundao-logo.png";
 
-// REACT
-import { useState, useEffect } from "react";
-import { useConnect } from "wagmi";
-
-const PolygonWidget = dynamic(() => import("../components/PolygonWidget"), {
-  ssr: false,
-});
-
-export const useIsMounted = () => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-  return mounted;
-};
-
 const Home: NextPage = () => {
-  const isMounted = useIsMounted();
-  const [{ data, error }, connect] = useConnect();
-
   return (
     <div>
       <Head>
