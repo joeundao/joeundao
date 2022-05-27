@@ -61,31 +61,6 @@ const Home: NextPage = () => {
               Joeun DAO is a community of good humans trying to do random acts
               of kindness worldwide. We believe kind acts have superpowers.
             </p>
-
-            <div className="mb-10">
-              <PolygonWidget />
-              {data.connectors.map((x) => (
-                <button
-                  className="w-full px-10 py-4 mb-5 mr-5 font-extrabold transition duration-300 ease-in-out delay-150 rounded-lg shadow text-cyan-900 bg-cyan-50 hover:bg-cyan-100 active:bg-cyan-200 md:w-fit"
-                  disabled={isMounted ? !x.ready : false}
-                  key={x.id}
-                  onClick={() => connect(x)}
-                >
-                  {isMounted ? x.name : x.id === "injected" ? x.id : x.name}
-                  {isMounted ? !x.ready && " (unsupported)" : ""}
-                </button>
-              ))}
-              {error && (
-                <div className="mt-5 text-rose-800">
-                  {error?.message ?? "Failed to connect"}
-                </div>
-              )}
-            </div>
-            <Link href="https://snapshot.org/#/joeundao.eth">
-              <button className="px-12 py-5 font-extrabold transition duration-300 ease-in-out delay-150 rounded-lg shadow text-rose-800 bg-rose-50 hover:bg-rose-100 active:bg-rose-200">
-                Join Joeun DAO Snapshot
-              </button>
-            </Link>
           </div>
         </div>
       </main>
